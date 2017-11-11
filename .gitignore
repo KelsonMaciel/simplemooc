@@ -99,3 +99,9 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+*.pyc
+staticfiles
+local_settings.py
+db.sqlite3
+
