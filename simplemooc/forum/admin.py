@@ -5,6 +5,7 @@ class ThreadAdmin(admin.ModelAdmin):
     
     list_display = ['title', 'author', 'created', 'modifield']
     search_fields = ['title', 'author__email', 'body']
+    prepopulated_fields = {'slug':('title',)}
 
 class ReplyAdmin(admin.ModelAdmin):
 
